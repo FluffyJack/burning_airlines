@@ -1,0 +1,20 @@
+<form>
+  <p>
+    <input type="text" name="number" placeholder="Number">
+    <input type="date" name="date" placeholder="Date">
+    <input type="number" name="origin" placeholder="Origin">
+    <input type="number" name="destination" placeholder="Destination">
+    <select>
+      {{#each planes}}
+        <option value="{{id}}">{{name}}</option>
+      {{/each}}
+    </select>
+  </p>
+
+  <p></p>
+
+  <p>
+    <button class="save">Save</button>
+    <button class="cancel">Cancel</button>
+  </p>
+</form>
